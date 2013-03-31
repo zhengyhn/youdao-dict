@@ -6,12 +6,16 @@ Youdao online dictionary query for Emacs in Linux
 ## Requirement
 
 * GNU/Emacs or other Emacs
-* Linux
+* Linux/OS X
+* Curl
 * Online
 
 ## Installation
 
+Make sure you are in Linux or OS X and have [curl](https://github.com/bagder/curl) installed.
+
 Download or clone the repository and drop the directory into your `.emacs.d/`.
+
 Load the files and requre the function like:
 
 ```lisp
@@ -39,4 +43,4 @@ You can query a word by `M-x youdao-dict-query`. The default keybinding is
 
 ## Thanks
 
-* pos-tip.el
+* [pos-tip.el](https://github.com/emacsmirror/pos-tip)
