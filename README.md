@@ -17,7 +17,7 @@ Load the files and requre the function like:
 ```lisp
 (add-to-list 'load-path "~/.emacs.d/plugins/youdao-dict")
 (require 'youdao-dict-query)
-```lisp
+```
 
 ## Usage
 
@@ -26,7 +26,7 @@ You can query a word by `M-x youdao-dict-query`. The default keybinding is
 
 ```lisp
 (global-set-key (kbd "key-you-like"))
-```lisp
+```
 
 ## TODO
 
