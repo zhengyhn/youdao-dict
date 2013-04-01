@@ -5,7 +5,7 @@
 ;; Author: Yuanhang Zheng <zhengyhn@gmail.com>
 ;; Version: 0.1
 ;; Created: Sun Mar 31 12:36:27 2013
-;; URL:
+;; URL: https://github.com/itlodge/youdao-dict
 
 (load-file (concat (file-name-directory load-file-name) "pos-tip-0.4.5.el"))
 (require 'pos-tip)
@@ -95,8 +95,8 @@
 	
 	(setq result (concat "Query: " (if original-query original-query)  "\n"
 						"Return: " (if return-phrase return-phrase) "\n"
-						"phonetic: /" (if phonetic-symbol phonetic-symbol)
-						"/\n"
+						(if phonetic-symbol
+							(concat "phonetic: /" phonetic-symbol "/\n"))
 						(if trans-content trans-content)
 						(if form-content form-content)
 						(if sen-content sen-content)))))

@@ -1,0 +1,9 @@
+#+TITLE:     bugs.org
+#+AUTHOR:    yuanhang zheng
+#+EMAIL:     zhengyhn@gmail.com
+#+DATE:      2013-04-01 Mon
+#+LANGUAGE:  zh-CN
+
+* unsolved
+- Wrong type when search 'itche'
+- Default word error
