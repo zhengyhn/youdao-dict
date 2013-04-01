@@ -29,7 +29,7 @@ You can query a word by `M-x youdao-dict-query`. The default keybinding is
 `C-c y`, but you can modify it by:
 
 ```lisp
-(global-set-key (kbd "key-you-like"))
+(global-set-key (kbd "key-you-like") 'youdao-dict-query)
 ```
 
 ## TODO
