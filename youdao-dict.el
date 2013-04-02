@@ -21,14 +21,15 @@
 			  (buffer-substring
 			   (region-beginning) (region-end))
 			(read-string
-			 (format SEARCH-PROMPT (current-word nil t)))))
+			 (format SEARCH-PROMPT (current-word nil t))
+			 nil nil (current-word nil t))))
 	;; drop the whitespace at start or end
 	(setq word (when (string-match "^[ \t]*" word)
 				 (replace-match "" nil nil word)))
 	(setq word (when (string-match "[ \t]*$" word)
 				 (replace-match "" nil nil word)))
 	;; no punctuation mark
-	(if (string-match "[,<.>/?;:\[{}`~!@#$%^&*()-_=+]" word)
+	(if (string-match "[,<.>/?;:\[{}`~!@#$%^&*()-=+]" word)
 		  (error "Wrong word!"))
 	(setq word word)))
 
@@ -111,7 +112,7 @@
 							  (format SEARCH-URL
 									  (url-hexify-string word-to-query))
 							  " 2> /dev/null")))
-  (pos-tip-show (youdao-dict-parse-xml xml-result) '("yellow" . "gray"))))
+  (pos-tip-show (youdao-dict-parse-xml xml-result) '("black" . "white"))))
 
 (global-set-key (kbd "C-c y") 'youdao-dict-query)
 (provide 'youdao-dict-query)

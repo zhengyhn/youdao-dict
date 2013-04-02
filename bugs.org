@@ -4,6 +4,8 @@
 #+DATE:      2013-04-01 Mon
 #+LANGUAGE:  zh-CN
 
-* unsolved
+* solved
 - Wrong type when search 'itche'
 - Default word error
+
+* unsolved
