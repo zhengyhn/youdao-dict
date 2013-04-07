@@ -20,16 +20,16 @@ Load the files and requre the function like:
 
 ```lisp
 (add-to-list 'load-path "~/.emacs.d/plugins/youdao-dict")
-(autoload 'youdao-dict-query "youdao-dict")
+(autoload 'youdao-dict "youdao-dict")
 ```
 
 ## Usage
 
-You can query a word by `M-x youdao-dict-query`. The default keybinding is
-`C-c y`, but you can modify it by:
+You can query a word by `M-x youdao-dict`. And you should add a
+keybinding:
 
 ```lisp
-(global-set-key (kbd "key-you-like") 'youdao-dict-query)
+(global-set-key (kbd "key-you-like") 'youdao-dict)
 ```
 
 ## TODO
