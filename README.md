@@ -20,7 +20,7 @@ Load the files and requre the function like:
 
 ```lisp
 (add-to-list 'load-path "~/.emacs.d/plugins/youdao-dict")
-(require 'youdao-dict-query)
+(autoload 'youdao-dict-query "youdao-dict")
 ```
 
 ## Usage
