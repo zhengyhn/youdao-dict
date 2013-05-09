@@ -43,4 +43,4 @@ keybinding:
 
 ## Thanks
 
-* [pos-tip.el](https://github.com/emacsmirror/pos-tip)
+* [popup.el](https://github.com/auto-complete/popup-el)
